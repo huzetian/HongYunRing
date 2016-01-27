@@ -25,6 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor whiteColor];
     //设置导航栏为不透明
     self.navigationController.navigationBar.translucent = NO;
     
@@ -35,7 +36,6 @@
     //监听登陆、登出的通知
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadViewController:) name:loginNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadViewController:) name:logoutNotification object:nil];
-    
 }
 
 - (void)dealloc {

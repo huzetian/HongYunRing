@@ -20,6 +20,7 @@
     [self setTitle:@"更多产品"];
     [self initTableView];
 }
+
 - (void)initTableView {
     //frame
     _tableView.frame = self.view.bounds;

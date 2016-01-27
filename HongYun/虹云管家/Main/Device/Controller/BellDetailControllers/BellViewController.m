@@ -28,7 +28,6 @@
 }
 - (void)viewWillAppear:(BOOL)animated {
 
-    NSLog(@"%@", [self appWindow].subviews);
 }
 
 /**

@@ -95,6 +95,7 @@
     UserInfoCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     
     //cell内容填充
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.cellTextLabel.text = _titleArray[indexPath.row];
     cell.cellImageView.image = [UIImage imageNamed:_imageArray[indexPath.row]];
     return  cell;
@@ -113,10 +114,8 @@
     
     if (indexPath.row == 6) {
         NSLog(@"退出登录");
-        
         [[UserManager shareInstance] logOut];
-        
-        [self presentLoginVC];
+        [self setLoginViewHidden:NO];
     }
     
 }
