@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="pFm-Ad-AfP" customClass="UserInfoHeader">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MqS-8J-dnM">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cxh-R5-qFu">
+                    <rect key="frame" x="122" y="12" width="76" height="76"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="76" id="d6N-sF-Bk0"/>
+                        <constraint firstAttribute="height" constant="76" id="dM6-Cg-bZ1"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="享智慧，享生活" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxP-wt-Llu">
+                    <rect key="frame" x="85" y="141" width="150" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="ZAX-6e-4HN"/>
+                        <constraint firstAttribute="height" constant="21" id="ntr-Za-HmG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEI-Bo-g7N">
+                    <rect key="frame" x="10" y="106" width="300" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="Iit-rQ-WeE"/>
+                        <constraint firstAttribute="width" constant="300" id="tSD-e0-6gM"/>
+                    </constraints>
+                    <state key="normal" title="用户名">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loginAction:" destination="pFm-Ad-AfP" eventType="touchUpInside" id="f6Z-Ya-Arh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="uEI-Bo-g7N" firstAttribute="centerX" secondItem="pFm-Ad-AfP" secondAttribute="centerX" id="3x4-P4-4Pd"/>
+                <constraint firstItem="MqS-8J-dnM" firstAttribute="leading" secondItem="pFm-Ad-AfP" secondAttribute="leading" id="5EU-WX-Mox"/>
+                <constraint firstItem="vxP-wt-Llu" firstAttribute="top" secondItem="uEI-Bo-g7N" secondAttribute="bottom" constant="8" id="GSb-1S-fB8"/>
+                <constraint firstItem="MqS-8J-dnM" firstAttribute="top" secondItem="pFm-Ad-AfP" secondAttribute="top" id="Nkm-d4-6yG"/>
+                <constraint firstAttribute="trailing" secondItem="MqS-8J-dnM" secondAttribute="trailing" id="VqD-Qb-l6R"/>
+                <constraint firstItem="cxh-R5-qFu" firstAttribute="top" secondItem="pFm-Ad-AfP" secondAttribute="top" constant="12" id="aP2-XN-eke"/>
+                <constraint firstAttribute="bottom" secondItem="MqS-8J-dnM" secondAttribute="bottom" id="fiy-Fc-vKN"/>
+                <constraint firstItem="vxP-wt-Llu" firstAttribute="centerX" secondItem="pFm-Ad-AfP" secondAttribute="centerX" id="iNg-OC-BER"/>
+                <constraint firstItem="uEI-Bo-g7N" firstAttribute="top" secondItem="cxh-R5-qFu" secondAttribute="bottom" constant="18" id="rOM-7y-kWx"/>
+                <constraint firstItem="cxh-R5-qFu" firstAttribute="centerX" secondItem="pFm-Ad-AfP" secondAttribute="centerX" id="xYp-hz-OAi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="background" destination="MqS-8J-dnM" id="BTx-Ob-m5y"/>
+                <outlet property="slogan" destination="vxP-wt-Llu" id="Xmq-oG-a42"/>
+                <outlet property="userAvatar" destination="cxh-R5-qFu" id="NzY-qX-ihS"/>
+                <outlet property="userName" destination="uEI-Bo-g7N" id="e5j-4F-5u3"/>
+            </connections>
+            <point key="canvasLocation" x="446" y="131"/>
+        </view>
+    </objects>
+</document>
